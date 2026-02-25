@@ -7,6 +7,10 @@ dotenv.config();
 
 const app = express();
 
+app.use("/auth", require("./routes/userRoutes"));
+
+
+
 connectToDatabase();
 
 const PORT = process.env.PORT;
